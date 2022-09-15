@@ -39,10 +39,10 @@ public class LinioStepDefs {
         this.scenario = scenario;
     }
 
-    //@After
-    //public void quitDriver(){
-    //    driver.quit();
-    //}
+    @After
+    public void quitDriver(){
+        driver.quit();
+    }
 
     @Then("que el nombre de mi usuario {string} figure")
     public void queElNombreDeMiUsuarioFigure(String userName) {
